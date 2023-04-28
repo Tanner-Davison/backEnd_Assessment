@@ -51,9 +51,9 @@ function createCharacterCard(character){
     <button onclick="deleteCharacter(${character.id},)">Delete</button>
     </div>
     <img alt='character cover image' src=${character.imageURL} class="character-cover-image"/>
-    <div class='cardBottomRow'>
+    
     <p class ='pQuote'>Favorite Quote: <strong class='pQuoteTwo'>${character.charQuote}</strong></p>
-    </div>
+    
     `
     
     characterContainer.appendChild(characterCard)
