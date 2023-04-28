@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Caveat:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Back End Assessment</title>
   </head>
   <body class="container">
     <button id="complimentButton">Get a compliment</button>
-
+    <button id="fortuneBtn">Get your fortune</button>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="main.js"></script>
     
+    <header>
+      <h1>Character form</h1>
+    </header>
+<main>
+  <form id="formid">
+      <select id="signs">
+          <option value="Aries">Aries</option>
+          <option value="Taurus">Taurus</option>
+          <option value="Gemini">Gemini</option>
+          <option value="Cancer">Cancer</option>
+          <option value="Leo">Leo</option>
+          <option value="Virgo">Virgo</option>
+          <option value="Libra">Libra</option>
+          <option value="Scorpio">Scorpio</option>
+          <option value="Sagitarius">Sagitarius</option>
+          <option value="Capricorn">Capricorn</option>
+          <option value="Aquarius">Aquarius</option>
+          <option value="Pisces">Pisces</option>
+      </select>
+      <input
+      type="text"
+      id="charName"
+      placeholder="enter name">
+    
+    <input
+      type="text"
+      id="charQuote"
+      placeholder="enter your favorite quote">
+    
+    <input
+      type="text"
+      id="img"
+      placeholder="image URL of character here"/>
+    <button id="addCharBtn">Create Character</button>
+  </form>
+
+    <section id="characters-container"></section>
+
+</main>
+
+<script src="main.js"></script>
   </body>
 </html>
