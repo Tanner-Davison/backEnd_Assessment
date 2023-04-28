@@ -4,6 +4,30 @@
     font-family: 'Castoro Titling', cursive;
    
 }
+.assignmentContainerBtn{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 75px;
+}
+#complimentButton{
+    background-color: royalblue;
+    color: black;
+    font-weight: bold;
+    border: 3px outset rgba(65, 105, 225, 0.435);
+    width:400px;
+    height:30px;
+    border-radius: 20px;
+}
+#fortuneBtn{
+    background-color: royalblue;
+    color: black;
+    font-weight: bold;
+    border: 3px outset rgba(65, 105, 225, 0.435);
+    width:400px;
+    height:30px;
+    border-radius: 20px;
+}
 body{
     background-color: whitesmoke;
 }
@@ -31,12 +55,19 @@ form{
     border-radius: 20%;
     border:4px inset rgba(65, 105, 225, 0.435)
 }
+#signs{
+    border-radius:5px;
+    height:20px;
+    width:250px;
+}
 #addCharBtn {
     background-color: black;
     color:rgba(255, 255, 255, 0.997);
     border:none;
     width: 200px;
     height: 30px;
+    border:1px outset rgb(39, 187, 220);
+    border-radius:15px;
 }
 input[type='text']{
     width: 85%;
@@ -76,18 +107,21 @@ background-color: rgba(250, 250, 250, 0.454);
     border-radius: 2%;
 }
 .pQuote{
-    display:flex;
-    position: relative;
-    align-items: center;
+    margin-top: 7px;
+   
     height: 100px;
     width:100%;
+    font-weight: bolder;
 }
 .pQuoteTwo{
     display:flex;
+    justify-content: center;
     width: 100%;
     height: 75px;
     overflow: hidden;
     overflow-y: scroll;
+    align-items: center;
+    font-style: oblique;
     
 }
 .BtnTraitsContainer{
