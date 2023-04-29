@@ -39,7 +39,7 @@ header{
 main{
     display:flex;
     flex-direction: row;
-    
+    justify-content: center;
     
 }
 form{
@@ -48,9 +48,10 @@ form{
     justify-content: center;
     gap: 30px;
     align-items: center;
-    margin: 30px;
+    margin: 10px;
     width:350px;
     height:350px;
+    min-width: 350px;
     background-color:royalblue;
     border-radius: 20%;
     border:4px inset rgba(65, 105, 225, 0.435)
@@ -81,7 +82,7 @@ input[type='text']{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:100px;
+    gap:50px;
 }
 .character-card{
 display:flex;
@@ -93,6 +94,7 @@ border:1px groove Black;
 overflow-y: hidden;
 border-radius:3%;
 background-color: rgba(250, 250, 250, 0.454);
+box-shadow: 5px 8px 20px grey;
 }
 .characterCardNameBlock{
     font-size: 25px;
@@ -133,4 +135,9 @@ background-color: rgba(250, 250, 250, 0.454);
 .cardBottomRow{
     display: flex;
     flex-direction: column;
+}
+#centerContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }

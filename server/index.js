@@ -20,4 +20,4 @@ app.post('/api/characters/', createCharacter)
 app.put('/api/characters/:id', updateCharacter)
 app.delete('/api/characters/:id',deleteCharacter)
 /////////////////////////////////////////////////////////////
-app.listen(4000, () => console.log("Server running on 4000"));
+app.listen(4001, () => console.log("Server running on 4000"));

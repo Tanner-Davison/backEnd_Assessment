@@ -4,7 +4,7 @@ const fortuneBtn = document.getElementById("fortuneBtn")
 const characterContainer = document.getElementById('characters-container') // Character Container
 const form = document.getElementById('formid')
 
-const baseURL = "http://localhost:4000/api/characters"
+const baseURL = "http://localhost:4001/api/characters"
 
 const charactersCallback = ({data: characters}) => displayCharacters(characters) 
 const errCallback = err => console.log(err)
@@ -35,7 +35,6 @@ function submitHandler(e) {
      charName.value=''
      charQuote.value=''
      imageURL.value=''
-     
 }
 function createCharacterCard(character){
     const characterCard = document.createElement('div')
@@ -57,6 +56,7 @@ function createCharacterCard(character){
     `
     
     characterContainer.appendChild(characterCard)
+    
 }
 
 function displayCharacters(arr) {
@@ -68,14 +68,15 @@ function displayCharacters(arr) {
 
 
 const getCompliment = () => {
-    axios.get("http://localhost:4000/api/compliment/")
+    axios.get("http://localhost:4001/api/compliment/")
         .then(res => {
             const data = res.data;
             alert(data);
-    });
+    })
+    .catch(errCallback)
 };
 const getFortune = ()=>{
-    axios.get("http://localhost:4000/api/fortune/")
+    axios.get("http://localhost:4001/api/fortune/")
     .then(res=>{
         const fortuneData = res.data;
         alert(fortuneData)
