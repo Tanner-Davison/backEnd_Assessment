@@ -5,6 +5,9 @@ const characterContainer = document.getElementById('characters-container') // Ch
 const form = document.getElementById('formid')
 
 const baseURL = "http://localhost:4001/api/characters"
+const complimentURL = "http://localhost:4001/api/compliment/"
+const fortuneURL = "http://localhost:4001/api/fortune/"
+
 
 const charactersCallback = ({data: characters}) => displayCharacters(characters) 
 const errCallback = err => console.log(err)
@@ -28,7 +31,7 @@ function submitHandler(e) {
         charQuote: charQuote.value,
         imageURL: imageURL.value
       };
-      console.log(charName)
+      console.log(charName.value)
      createCharacter(bodyObj)
 
      zodiacSign.value=''
@@ -68,7 +71,7 @@ function displayCharacters(arr) {
 
 
 const getCompliment = () => {
-    axios.get("http://localhost:4001/api/compliment/")
+    axios.get(complimentURL)
         .then(res => {
             const data = res.data;
             alert(data);
@@ -76,7 +79,7 @@ const getCompliment = () => {
     .catch(errCallback)
 };
 const getFortune = ()=>{
-    axios.get("http://localhost:4001/api/fortune/")
+    axios.get(fortuneURL)
     .then(res=>{
         const fortuneData = res.data;
         alert(fortuneData)
